@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Weather App</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main id="root">
+      <div id="searchDiv">
+        <form id="search-form">
+          <input
+            type="search"
+            placeholder="Enter city"
+            id="search-input"
+            required
+          />
+          <button id="search-button">Search</button>
+        </form>
+        <button id="converter">Metric</button>
+      </div>
+      <div id="locDiv">
+        <span>City:</span>
+        <p id="searched-city"></p>
+      </div>
+      <div id="descDiv">
+        <img src="" alt="" id="weatherPic" />
+        <p id="weather-description"></p>
+      </div>
+      <div id="tempDiv">
+        <span>Temperature:</span>
+        <p id="searched-temp"></p>
+        <span>Min:</span>
+        <p id="searched-temp-min"></p>
+        <span>Max:</span>
+        <p id="searched-temp-max"></p>
+      </div>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>

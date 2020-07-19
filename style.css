@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Dosis&display=swap');
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+main {
+  margin-top: 150px;
+  padding: 20px;
+  background-color: #00a2fc;
+  border-radius: 30px;
+  width: 600px;
+  height: 350px;
+  text-align: center;
+  position: relative;
+  box-shadow: 10px 10px 20px 10px rgba(0, 0, 0, 0.2);
+  font-size: 20px;
+  font-family: 'Dosis', sans-serif;
+}
+#locDiv {
+  position: absolute;
+  padding: 20px;
+  height: 150px;
+  width: 300px;
+  left: 0;
+  color: white;
+  margin-top: 20px;
+}
+span {
+  color: rgba(255, 222, 102, 1);
+  font-size: 30px;
+}
+#tempDiv {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 80px;
+  left: 0;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  color: white;
+}
+#descDiv {
+  position: absolute;
+  right: 0;
+  width: 400px;
+  height: 220px;
+  color: white;
+}
+input {
+  width: 400px;
+  height: 50px;
+  font-size: 20px;
+  margin: 5px;
+  border-radius: 50px;
+  border: 1px grey solid;
+  outline: none;
+  text-align: center;
+}
+#search-button {
+  height: 50px;
+  margin: 5px;
+  font-size: 20px;
+  background-color: rgba(255, 222, 102, 1);
+  color: rgba(188, 155, 63, 1);
+  border-radius: 50px;
+  border: none;
+  outline: none;
+}
+button:active {
+  transform: translateY(4px);
+}
+img {
+  height: 200px;
+  width: auto;
+}
+#converter {
+  width: 30px;
+}
+#searchDiv {
+  display: flex;
+}
+#converter {
+  margin: 5px;
+  font-size: 20px;
+  background-color: rgba(255, 222, 102, 1);
+  color: rgba(188, 155, 63, 1);
+  border-radius: 50px;
+  border: none;
+  outline: none;
+  width: 80px;
+}
