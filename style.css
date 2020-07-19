@@ -57,6 +57,7 @@ input {
   border: 1px grey solid;
   outline: none;
   text-align: center;
+  -webkit-appearance: none;
 }
 #search-button {
   height: 50px;
