@@ -28,10 +28,10 @@ const getWeather = async (city, unit) => {
   //unit is imperial or metric
   try {
     const response = await fetch(
-      `https://api.openweathermap.org/data/2.5/weather?q=${city}&units=${unit}&appid=256551530792322a5380ad7d7262f3db`
+      `https://api.openweathermap.org/data/2.5/weather?q=${city}&units=${unit}&appid=256551530792322a5380ad7d7262f3db`,
+      { mode: 'cors' }
     );
     const weatherData = await response.json();
-    console.log(weatherData);
     displayCity.innerText = capitalize(city) + ', ' + weatherData.sys.country;
     displayTemp.innerText = roundUp(weatherData.main.temp);
     weatherPic.src = weatherIcon(weatherData.weather[0].main);
